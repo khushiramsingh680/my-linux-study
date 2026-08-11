@@ -51,5 +51,68 @@ cat /etc/groups
 ```
 - [ ] How to check a user group
 ```sh
-group groupname
+groups groupname
 ```
+
+## Permission
+- Read  r  4
+- Write  w  2
+- Exexute  x 1
+## Permissions are given to:
+- users
+- groups
+- others
+
+- [ ] How to check permission of a file
+      
+```yaml
+
+-rw-  r-- r--
+user         group     Rest of all
+
+-rw-r--r--. 1 root root 0 Aug 11 13:08 justcheck
+ls -l
+-rw-r--r--. 1 root root 0 Aug 11 13:08 justcheck
+```
+- [ ] Default permission of a file
+```sh
+644
+```
+- [ ] Default permission of a dirctory
+```sh
+755
+```
+- [ ] How to change owner of a file/dir
+```sh
+chown <username> filename/dir
+```
+- [ ] How to change group of a file/dir
+```sh
+chgrp <grpname> file/dir
+```
+- [ ] How to change the permission of a file or dir
+```sh
+chmod 755 file/dir
+```
+- [ ] How to Generate a ssh key
+```sh
+ssh-keygen -f <sshkeyname>
+enter
+enter
+```
+- [ ] Where to copy ssh public key
+```sh
+open pub key
+copy contents and paste content to user /home/<user/.ssh/authorized_keys
+```
+
+## Permission for a ssh public key 
+```sh
+chown test01:test01 /home/test01
+chown -R test01:test01 /home/test01/.ssh
+
+chmod 755 /home/test01
+chmod 700 /home/test01/.ssh
+chmod 600 /home/test01/.ssh/authorized_keys
+```
+
