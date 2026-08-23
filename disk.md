@@ -57,4 +57,4 @@ mkswap /dev/nvme2n1
 mount -o nouuid  /dev/nvme1n1p1 /mnt
 ```
 - [ ] Now you have your dtat in `/mnt`
-- [ ] modify `/etc/fstab`
+- [ ] modify `/mnt/etc/fstab`
