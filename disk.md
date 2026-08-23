@@ -44,3 +44,17 @@ vi /etc/fstab
 ```sh
 blkid
 ```
+
+#### Using disk as a Swap memory
+- [ ] Attach a  disk
+- [ ] Format the disk
+```sh
+mkswap /dev/nvme2n1
+```
+
+-  [ ]  How to mount a volume from one instance to another
+```sh
+mount -o nouuid  /dev/nvme1n1p1 /mnt
+```
+- [ ] Now you have your dtat in `/mnt`
+- [ ] modify `/etc/fstab`
