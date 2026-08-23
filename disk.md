@@ -40,8 +40,8 @@ mount /dev/nvme1n1  /data
 vi /etc/fstab
 ```
 <img width="968" height="178" alt="image" src="https://github.com/user-attachments/assets/a65e6a95-3c0d-4041-b2c7-88be26466665" />
-- [ ] How to check uuid of a disk
 
+- [ ] How to check uuid of a disk
 ```sh
 blkid
 ```
